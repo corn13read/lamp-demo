@@ -1,5 +1,5 @@
 web:
-  image: php
+  image: hrwebasst/php-mysql
   command: php -S 0.0.0.0:8000 -t /app
   links:
     - db

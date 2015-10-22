@@ -15,3 +15,7 @@ docker exec -it lampdemo_db_1 bash -c 'exec mysql -uroot -ppassword demo < /sche
 docker-compose stop
 docker-compose rm
  ```
+
+ ### Notes
+
+ This stores the password in plain text in the database. Ideally this would have mcrypt installed and used to encrypt the passwords but this was out of scope.

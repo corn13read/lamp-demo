@@ -14,16 +14,16 @@
     $(document).ready(function(){
       $("#login").click(function(){
         user=$("#user").val();
-        password=$("#pass").val();
+        pass=$("#pass").val();
         $.ajax({
            type: "POST",
            url: "auth.php",
            data: "user="+user+"&pass="+pass,
-           success: function(html){    
+           success: function(html){
              if(html=='true') {
                window.location="index.php";
               } else {
-                $("#login_error").html("Wrong username or password");
+                $("#error").html("Wrong username or password");
               }
             },
         });
@@ -34,9 +34,10 @@
 </head>
 
 <body>
-<h1>Desert Login</h1>
+
 <div id="error"></div>
   <fieldset>
+  <legend><h1>Desert Login</h1></legend>
     <form action="./" method="post">
       <ul>
         <li>
@@ -53,6 +54,7 @@
         </li>
       </ul>
     </form>
+    <p>After using the db import script by running the command from the readme you can use demo:demo to log in.</p>
 </fieldset>
 
 </body>

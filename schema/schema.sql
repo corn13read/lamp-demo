@@ -7,4 +7,4 @@ last_login DATETIME,
 PRIMARY KEY (client_id)
 ) COMMENT='this is my test table';
 
-INSERT INTO demo.client (user_name,password_hash) VALUES ('demo', MD5('demo'));
+INSERT INTO demo.client (user_name,password_hash) VALUES ('demo', 'demo');

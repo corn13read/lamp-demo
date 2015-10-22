@@ -1,0 +1,10 @@
+fieldset {
+  width: 500px;
+  margin: 0 auto;
+}
+p, label {
+  font-family: sans-serif;
+}
+form ul {
+  list-style-type: none;
+}
