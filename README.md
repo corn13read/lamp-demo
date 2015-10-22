@@ -16,6 +16,6 @@ docker-compose stop
 docker-compose rm
  ```
 
- ## Notes
+### Notes
 
  This stores the password in plain text in the database. Ideally this would have mcrypt installed and used to encrypt the passwords but this was out of scope.
