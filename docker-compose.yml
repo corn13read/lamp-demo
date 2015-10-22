@@ -9,8 +9,6 @@ web:
     - ./app:/app
 db:
   image: mysql
-  ports:
-    - "3306:3306"
   volumes:
     - ./schema:/schema
   environment:
