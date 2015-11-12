@@ -1,12 +1,11 @@
 web:
-  image: hrwebasst/php-mysql
-  command: php -S 0.0.0.0:8000 -t /app
+  build: .
   links:
     - db
   ports:
-    - "8000:8000"
+    - "8000:80"
   volumes:
-    - ./app:/app
+    - ./app:/var/www/html
 db:
   image: mysql
   volumes:

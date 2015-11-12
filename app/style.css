@@ -7,4 +7,11 @@ p, label {
 }
 form ul {
   list-style-type: none;
+  display: inline-block;
+}
+form li label {
+  display:block;
+}
+#error {
+	color:red;
 }

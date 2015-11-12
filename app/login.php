@@ -35,18 +35,19 @@
 
 <body>
 
-<div id="error"></div>
+
   <fieldset>
   <legend><h1>Desert Login</h1></legend>
+  <div id="error"></div>
     <form action="./" method="post">
       <ul>
         <li>
-          <label for="name">Username </label>
-          <input type="text" size="50"  name="user" id="user" />
+          <label for="name">Username: </label>
+          <input type="text" size="30"  name="user" id="user" />
         </li>
         <li>
-          <label for="name">Password</label>
-          <input type="password" size="50"  name="pass" id="pass" />
+          <label for="name">Password: </label>
+          <input type="password" size="30"  name="pass" id="pass" />
         </li>
         <li>
           <label></label>
